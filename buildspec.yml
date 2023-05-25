@@ -8,6 +8,7 @@ phases:
       - echo Nothing to do in pre_build phase
   build:
     commands:
+      - chmod +x ./HelloWorldFunction/mvnw
       - ./HelloWorldFunction/mvnw clean package
       - sam build
 artifacts:
