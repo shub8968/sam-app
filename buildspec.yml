@@ -9,7 +9,8 @@ phases:
   build:
     commands:
       - chmod +x ./HelloWorldFunction/mvnw
-      - ./HelloWorldFunction/mvnw clean package
+      - cd HelloWorldFunction
+      - mvnw clean package
       - sam build
 artifacts:
   files:
