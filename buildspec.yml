@@ -11,8 +11,8 @@ phases:
       - chmod +x ./HelloWorldFunction/mvnw
       - cd HelloWorldFunction
       - ./mvnw clean package
-      - sudo apt-get update
-      - sudo apt-get install build-essential libbz2-dev liblzma-dev libncurses5-dev libncursesw5-dev libcurl4-gnutls-dev libssl-dev libxml2-dev zlib1g-dev
+      - sudo yum update
+      - sudo yum install bzip2-devel ncurses-devel curl-devel openssl-devel libxml2-devel zlib-devel
       - wget https://github.com/samtools/samtools/releases/download/1.11/samtools-1.11.tar.bz2
       - tar xvf samtools-1.11.tar.bz2
       - cd samtools-1.11
